@@ -4,7 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-base: "/lic-buddy-launchpad/",
+export default defineConfig(({ mode }) => ({
+  base: "/lic-buddy-launchpad/",
   server: {
     host: "::",
     port: 8080,
