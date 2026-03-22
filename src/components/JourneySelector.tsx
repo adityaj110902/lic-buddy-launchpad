@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Briefcase, FileCheck, ShieldCheck, ClipboardList, UserPlus } from "lucide-react";
 
-const CUSTOMER_JOURNEY_LINK = "https://example.com/customer-onboarding"; // Replace with your link
-const AGENT_JOURNEY_LINK = "https://example.com/agent-onboarding"; // Replace with your link
+const CUSTOMER_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/term_insurance_lic"; // Replace with your link
+const AGENT_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/agent_onboarding#Landing"; // Replace with your link
 
 const JourneySelector = () => {
   return (
