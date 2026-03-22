@@ -1,4 +1,4 @@
-import licLogo from "@/assets/lic-logo.png";
+import licLogo from "@/assets/lic.png";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
 
