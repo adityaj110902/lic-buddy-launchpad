@@ -1,4 +1,4 @@
-import licLogo from "@/assets/lic-logo.png";
+import licLogo from "@/assets/lic.png";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
