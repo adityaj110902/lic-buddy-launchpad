@@ -35,13 +35,11 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2 opacity-0 animate-fade-up" style={{ animationDelay: "350ms" }}>
-            <Button variant="hero" size="lg" asChild>
-              <a href={JOURNEY_LINK}>
-                Apply Now <ArrowRight className="w-4 h-4" />
-              </a>
+            <Button variant="hero" size="lg" onClick={() => { window.location.href = JOURNEY_LINK; }}>
+              Apply Now <ArrowRight className="w-4 h-4" />
             </Button>
-            <Button variant="hero-outline" size="lg" asChild>
-              <a href="#features">Learn More</a>
+            <Button variant="hero-outline" size="lg" onClick={() => { window.location.href = "#features"; }}>
+              Learn More
             </Button>
           </div>
 
