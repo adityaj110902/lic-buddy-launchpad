@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Briefcase, FileCheck, ShieldCheck, ClipboardList, UserPlus } from "lucide-react";
 
-const CUSTOMER_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/nextgenlife#Landing"; // Replace with your link
-const AGENT_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/agent_onboarding#Landing"; // Replace with your link
+const CUSTOMER_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/nextgenlife#Landing";
+const AGENT_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/agent_onboarding#Landing";
 
 const JourneySelector = () => {
   return (
@@ -17,10 +17,10 @@ const JourneySelector = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
           {/* Customer Card */}
-          <div className="opacity-0 animate-slide-in-left" style={{ animationDelay: "150ms" }}>
-            <div className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-border group relative overflow-hidden">
+          <div className="opacity-0 animate-slide-in-left flex" style={{ animationDelay: "150ms" }}>
+            <div className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-border group relative overflow-hidden flex flex-col w-full">
               <div className="absolute top-0 left-0 w-full h-1 gradient-gold" />
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 rounded-lg bg-lic-gold/15 flex items-center justify-center">
@@ -31,7 +31,7 @@ const JourneySelector = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 New or existing policyholder? Start your onboarding to explore plans, submit documents, and manage your policies digitally.
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-1">
                 {[
                   { icon: FileCheck, text: "Submit KYC documents online" },
                   { icon: ShieldCheck, text: "View & manage your policies" },
@@ -43,7 +43,7 @@ const JourneySelector = () => {
                   </li>
                 ))}
               </ul>
-              <Button variant="hero" className="w-full" asChild>
+              <Button variant="hero" className="w-full mt-auto" asChild>
                 <a href={CUSTOMER_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
                   Apply Now <ArrowRight className="w-4 h-4" />
                 </a>
@@ -52,8 +52,8 @@ const JourneySelector = () => {
           </div>
 
           {/* Agent Card */}
-          <div className="opacity-0 animate-slide-in-right" style={{ animationDelay: "250ms" }}>
-            <div className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-border group relative overflow-hidden">
+          <div className="opacity-0 animate-slide-in-right flex" style={{ animationDelay: "250ms" }}>
+            <div className="bg-card rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-border group relative overflow-hidden flex flex-col w-full">
               <div className="absolute top-0 left-0 w-full h-1 gradient-navy" />
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -64,7 +64,7 @@ const JourneySelector = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 LIC agent or advisor? Complete your onboarding, access tools, and start helping customers secure their future.
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-1">
                 {[
                   { icon: UserPlus, text: "Register & verify credentials" },
                   { icon: FileCheck, text: "Access agent dashboard" },
@@ -76,7 +76,7 @@ const JourneySelector = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full" size="default" asChild>
+              <Button className="w-full mt-auto" size="default" asChild>
                 <a href={AGENT_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
                   Apply Now <ArrowRight className="w-4 h-4" />
                 </a>
