@@ -43,10 +43,8 @@ const JourneySelector = () => {
                   </li>
                 ))}
               </ul>
-              <Button variant="hero" className="w-full mt-auto" asChild>
-                <a href={CUSTOMER_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
-                  Apply Now <ArrowRight className="w-4 h-4" />
-                </a>
+              <Button variant="hero" className="w-full mt-auto" onClick={() => { window.location.href = CUSTOMER_JOURNEY_LINK; }}>
+                Apply Now <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -76,10 +74,8 @@ const JourneySelector = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto" size="default" asChild>
-                <a href={AGENT_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
-                  Apply Now <ArrowRight className="w-4 h-4" />
-                </a>
+              <Button className="w-full mt-auto" size="default" onClick={() => { window.location.href = AGENT_JOURNEY_LINK; }}>
+                Apply Now <ArrowRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
