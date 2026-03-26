@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Briefcase, FileCheck, ShieldCheck, ClipboardList, UserPlus } from "lucide-react";
 
-const CUSTOMER_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/term_insurance_lic"; // Replace with your link
+const CUSTOMER_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/nextgenlife#Landing"; // Replace with your link
 const AGENT_JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/agent_onboarding#Landing"; // Replace with your link
 
 const JourneySelector = () => {
@@ -45,7 +45,7 @@ const JourneySelector = () => {
               </ul>
               <Button variant="hero" className="w-full" asChild>
                 <a href={CUSTOMER_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
-                  Start Customer Journey <ArrowRight className="w-4 h-4" />
+                  Apply Now <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>
             </div>
@@ -78,7 +78,7 @@ const JourneySelector = () => {
               </ul>
               <Button className="w-full" size="default" asChild>
                 <a href={AGENT_JOURNEY_LINK} target="_blank" rel="noopener noreferrer">
-                  Start Agent Journey <ArrowRight className="w-4 h-4" />
+                  Apply Now <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>
             </div>
