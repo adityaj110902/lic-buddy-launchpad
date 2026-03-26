@@ -2,7 +2,7 @@ import heroFamily from "@/assets/hero-family.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield } from "lucide-react";
 
-const JOURNEY_LINK = "#journey"; // Replace with your actual journey URL
+const JOURNEY_LINK = "https://presales.businessbywire.com/vividwebdp/vividflow/run/nextgenlife#Landing"; // Replace with your actual journey URL
 
 const HeroSection = () => {
   return (
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-3 pt-2 opacity-0 animate-fade-up" style={{ animationDelay: "350ms" }}>
             <Button variant="hero" size="lg" asChild>
               <a href={JOURNEY_LINK}>
-                Start Journey <ArrowRight className="w-4 h-4" />
+                Apply Now <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
             <Button variant="hero-outline" size="lg" asChild>
